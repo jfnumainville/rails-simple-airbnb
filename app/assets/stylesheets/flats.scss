@@ -1,0 +1,33 @@
+// Place all the styles related to the Flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+
+font-family: 'Roboto', sans-serif;
+}
+
+#main-container{
+width: 90%;
+
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+
+.flat-card{
+
+}
+
+.flat-card p {
+
+  font-size: 16px;
+}
+
+
+.flat-card img{
+  max-width: 60%;
+}
