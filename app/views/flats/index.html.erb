@@ -1,5 +1,5 @@
-<div id= "main-container">
-  <div class="cards">
+<div class="container">
+  <div class="parent">
     <%  @flats.each do |flat|%>
     <div class= "flat-card">
       <%= image_tag  "#{flat.picture_url}"%>
@@ -7,7 +7,7 @@
       <p><%= flat.address %></p>
       <p><%= flat.number_of_guests %></p>
       <p><%= flat.price_per_night %>$</p>
-      <% end %>
     </div>
+   <% end %>
   </div>
 </div>

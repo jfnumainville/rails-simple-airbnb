@@ -6,28 +6,34 @@ body {
 font-family: 'Roboto', sans-serif;
 }
 
-#main-container{
+.container{
 width: 90%;
+margin: auto;
+
+
 
 }
 
-.cards{
+.parent {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
-}
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 25px;
+  }
 
-
-.flat-card{
+.flat-card {
+ border: 3px solid #96D4D4;
+ justify-content: center;
 
 }
 
 .flat-card p {
-
   font-size: 16px;
-}
+ }
 
 
 .flat-card img{
   max-width: 60%;
+
 }

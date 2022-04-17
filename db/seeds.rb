@@ -9,7 +9,7 @@ puts "Cleaning database..."
 Flat.destroy_all
 puts "Creating Flats..."
 
-5.times do
+20.times do
   name = Faker::Restaurant.name
   address = Faker::Address.street_address
   description = Faker::Restaurant.description
