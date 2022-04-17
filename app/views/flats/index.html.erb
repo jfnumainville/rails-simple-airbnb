@@ -2,11 +2,13 @@
   <div class="parent">
     <%  @flats.each do |flat|%>
     <div class= "flat-card">
-      <%= image_tag  "#{flat.picture_url}"%>
-      <h3><%= flat.name  %></h3>
-      <p><%= flat.address %></p>
-      <p><%= flat.number_of_guests %></p>
-      <p><%= flat.price_per_night %>$</p>
+      <div class= "card-img"><%= image_tag  "#{flat.picture_url}" %></div>
+        <div class = "card-body">
+          <h3><%= flat.name  %></h3>
+          <p><%= flat.address %></p>
+          <p><%= flat.number_of_guests %></p>
+          <p><%= flat.price_per_night %>$</p>
+        </div>
     </div>
    <% end %>
   </div>
